@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EdgeLedger: helping you find financial freedom.">
+  <meta name="keywords" content="finances,financial-help,money">
+  <link rel="stylesheet" href="/Project - Financial/css/utilities.css">
+  <link rel="stylesheet" href="/Project - Financial/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Post 1 | EdgeLedger</title>
+</head>
+<body id="home">
+  <header class="hero blog">
+    <!-- Navbar Logo -->
+    <div id="navbar" class="navbar top">
+      <h1 class="logo">
+        <a href="home"><span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger</a>        
+      </h1>
+
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="/Project - Financial/index.html">Home</a></li>
+          <li><a href="/Project - Financial/index.html#about">About</a></li>
+          <li><a href="/Project - Financial/index.html#cases">Cases</a></li>
+          <li><a href="/Project - Financial/index.html#blog">Blog</a></li>
+          <li><a href="/Project - Financial/index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Showcase -->
+    <div class="content">
+      <h1>Post 1</h1>
+      
+     
+    </div>
+  </header>
+
+
+
+  <main>
+
+   <!-- Post -->
+    <section class="post">
+      <h2>Blog Post 1</h2>
+      <p class="meta">
+        <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> | December 4 2021
+
+      </p>
+      <img src="/Project - Financial/img/blog/blog1.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi quo veniam sit asperiores dicta, molestias labore consectetur debitis non repellat.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga voluptatum ratione at, quo et placeat totam aperiam commodi hic inventore incidunt repellat ipsam eos porro eius, nobis, asperiores consequatur beatae. Dolores voluptatem enim dicta nulla, sequi modi laboriosam sit? Explicabo veritatis excepturi velit fugiat consequuntur ipsam corporis ex deserunt, debitis molestias? Praesentium nisi unde dignissimos natus quas, cum ratione quod?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim non, iure ratione mollitia placeat itaque facere reiciendis provident temporibus! Error aliquam cum provident repudiandae voluptates iste corporis omnis eveniet aperiam quidem non aspernatur voluptas, beatae animi, vitae magnam labore facilis rerum dignissimos cumque totam. Reiciendis aperiam id possimus facere recusandae.</p>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+  </main>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function() {
+      if(window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if(!scrolled){
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function() {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      }
+      else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+  
+</body>
+</html>
